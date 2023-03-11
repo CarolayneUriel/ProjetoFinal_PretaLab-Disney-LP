@@ -21,11 +21,9 @@ function calcularMedia() {
   // evite mexer no código acima!
 
   let media = (nota1 + nota2 + nota3 + nota4) / 4
-  let notas = nota1 && nota2 && nota3 && nota4
   
- 
-  if(notas !== notas < 0 && notas !== notas < 10){mensagem = " Essa nota é inválida, coloque uma nota de 0 á 10" }
-  else if( media === 0 ) {mensagem = "Infelizmente você zerou a prova :("}
+  
+  if( media === 0 ) {mensagem = "Infelizmente você zerou a prova :("}
   else  if  ( media >= 0.1 && media <= 3){mensagem = "Caramba, deu ruim, você obteve media " + media + " ! Estude mais e tente novamente!"}
   else if (media >= 3.1 && media <= 5.9 ){mensagem = "Você obteve media " + media + " Falta pouco para a média."}
   else if (media >= 6 && media <= 7){mensagem = "Você está na média com " + media}
